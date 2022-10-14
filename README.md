@@ -23,12 +23,15 @@ clear_interval(interval)  # stops the interval
 ### set_timeout
 
 ```python
+import time
 from timers import set_timeout, clear_timeout
 
 def print_hello():
     print("hello")
 
 timeout = set_timeout(print_hello, 1)  # prints "hello" after one second
+
+time.sleep(2)
 
 clear_timeout(timeout)
 ```
