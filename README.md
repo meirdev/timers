@@ -10,10 +10,8 @@
 import time
 from timers import set_interval, clear_interval
 
-
 def print_hello():
     print("hello")
-
 
 interval = set_interval(print_hello, 1)  # prints "hello" every second
 
